@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>replit</title>
+  
+    <link rel="stylesheet" href="{{ url_for('static',filename='css/style.css') }}">
+  
+<!-- icon css bootstrap -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+
+
+</head>
+
+<body>
+  
+
+  <section id ="header">
+<!-- main logo -->
+<img src="static/img/logo.png" class="logo" alt="">
+</a>
+
+<!--navabr -->
+    <div>
+      <ul id="navbar">
+ <li><a class="active" href="/">Home</a></li>
+        <li><a href="{{ url_for('shop') }}">Shop</a></li>
+        <li><a href="{{ url_for('blog') }}">Blog </a></li>
+        <li><a href="{{ url_for('about') }}">About</a></li>
+        <li><a href="{{ url_for('contact') }}">Contact Us</a>
+        <!-- close button -->
+        <a href="#" id="close"><i class="bi bi-x-circle"></i></a>
+
+      </ul>
+    </div>
+
+    <!-- for responsiveness -->
+    <div id="mobile">
+ 
+      <a href="cart.html"><i class="bi bi-bag-fill"></i></a>
+       <!-- for hamburger menu -->
+       <i id="bar" class="bi bi-list"></i>
+    </div>
+
+  </section>
+
+<!-- page header section -->
+  <section id ="page-header" class="about-header">
+    <h2>Know Us</h2>
+    <p>What we do</p>
+   
+  </section>
+
+  <!-- the about us details part -->
+ 
+  <section id="about-head" class="section-p1">
+    <img src="static/img/about/a6.jpg" alt="">
+    <div>
+    <h2>Who We Are?</h2>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+    consequat. Duis aute irure
+    dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat
+    nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+    culpa qui officia deserunt mollit anim id est laborum.</p>
+    <abbr title="">Create stunning images with as much or as little control as
+    you like thanks to a choice of Basic and Creative modes.</abbr>
+    <!-- for adding space -->
+    <br><br>
+    <!-- marquee -->
+    <marquee bgcolor="#ccc" loop="-1" scrollamount="5" width="100%">Create
+    stunning images with as much or as little control as you like thanks to a
+    choice of Basic and Creative modes.
+    </marquee>
+    </div>
+    </section>
+    
+    <!-- video part -->
+<section id="about-app" class="section-p1">
+<h1>Download Our <a href="#">App</a> </h1>
+<div class="video">
+<video autoplay muted loop src="static/img/about/1.mp4"></video>
+</div>
+</section>
+
+
+<!--  feture boxes -->
+<section id="feature" class="section-p1">
+    <!-- box-1 -->
+  <div class="fe-box">
+    <img src="static/img/features/f1.png" alt="">
+    <h6>Free Shipping</h6>
+    </div>
+
+    <!-- box-2 -->
+  <div class="fe-box">
+    <img src="static/img/features/f2.png" alt="">
+    <h6>Free Shipping</h6>
+    </div>
+
+    <!-- box-3 -->
+  <div class="fe-box">
+    <img src="img/features/f3.png" alt="">
+    <h6>Free Shipping</h6>
+    </div>
+
+    <!-- box-4 -->
+  <div class="fe-box">
+    <img src="img/features/f4.png" alt="">
+    <h6>Free Shipping</h6>
+    </div>
+
+    <!-- box-5 -->
+  <div class="fe-box">
+    <img src="img/features/f5.png" alt="">
+    <h6>Free Shipping</h6>
+    </div>
+
+    <!-- box-6 -->
+  <div class="fe-box">
+    <img src="img/features/f6.png" alt="">
+    <h6>Free Shipping</h6>
+    </div>
+
+</section>
+
+  <!-- footer -->
+<footer class="section-p1">
+<div class="col">
+  <img class="logo" src="img/logo.png" alt="">
+  <h4>Contact</h4>
+  <p><strong>Address:</strong> 562 Wellington Road, Street 32, San Francisco</p>
+  <p><strong>Phone:</strong> +01 2222 365 / (+91) 01 2345 6789</p>
+  <p><strong>Hours:</strong> 10:00-18:00, Mon - Sat</p>
+
+  <!-- social media icons -->
+<div class="follow">
+<h4>Follow Us</h4>
+<div class="icon">
+  <i class="bi bi-facebook"></i>
+  <i class="bi bi-twitter"></i>
+  <i class="bi bi-instagram"></i>
+  <i class="bi bi-pinterest"></i>
+  <i class="bi bi-youtube"></i>
+</div>
+</div>
+</div>
+
+<!-- about us section -->
+<div class="col">
+  <h4>About</h4>
+  <a href="#">About Us</a>
+  <a href="#">Delivery Information</a>
+  <a href="#">Privacy Policy</a>
+  <a href="#">Terms & Conditions</a>
+  <a href="#">Contact Us</a>
+  
+</div>
+
+<!-- my account section -->
+<div class="col">
+  <h4>My Acoount</h4>
+  <a href="#">Sign In</a>
+  <a href="#">View Cart</a>
+  <a href="#">My Wishlist</a>
+  <a href="#">Track Order</a>
+  <a href="#">Help</a>
+  
+</div>
+
+<!-- install app section -->
+<div class="col install">
+  <h4>Install App</h4>
+  <p>From App Store or Goolge Play Store</p>
+  <div class="row">
+    <img src="img/pay/app.jpg" alt="">
+    <img src="img/pay/play.jpg" alt="">
+  </div>
+  <!-- payment section -->
+  <!-- <div class="pay"> -->
+  <p>Secured Payment Gateways</p>
+  <img src="img/pay/pay.png" alt="">
+<!-- </div> -->
+</div>
+
+<!-- copyright section -->
+<div class="copyright">
+  <p>© 2023, Tech etc - HTML CSS ECom Template</p>
+</div>
+
+</footer>
+
+<script src="script.js"></script>
+</body>
+
+</html>

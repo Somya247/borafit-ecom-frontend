@@ -17,17 +17,20 @@
 
   <section id ="header">
 <!-- main logo -->
-    <a href="#"><img src="img/logo.png" class="logo" alt=""></a>
+    <!-- main logo -->
+  <a href="#">
+    <img class= "header-logo" src="static/img/bora-fits-low-resolution-logo-color-on-transparent-background.png" class="logo" alt="">
+</a>
 
 <!--navabr -->
     <div>
       <ul id="navbar">
-      <li><a class="active" href="/">Home</a></li>
-        <li><a href="{{ url_for('shop') }}">Shop</a></li>
+      <li><a  href="/">Home</a></li>
+        <li><a class="active" href="{{ url_for('shop') }}">Shop</a></li>
         <li><a href="{{ url_for('blog') }}">Blog </a></li>
         <li><a href="{{ url_for('about') }}">About</a></li>
         <li><a href="{{ url_for('contact') }}">Contact Us</a>
-        <li id="lg-bag"><a href="cart.html"><i class="bi bi-bag-fill"></i></a></li>
+        <li id="lg-bag"><a href="{{ url_for('cart') }}"><i class="bi bi-bag-fill"></i></a></li>
         <!-- close button -->
         <a href="#" id="close"><i class="bi bi-x-circle"></i></a>
 
@@ -50,8 +53,8 @@
 
 <!-- page header section -->
   <section id ="page-header">
-    <h2>Super saver deals</h2>
-    <p>Save more with coupons up to 70% off! </p>
+    <h1>Super saver deals</h1>
+    <h3>Save more with coupons up to 70% off! </h3>
   </section>
 
 
@@ -60,10 +63,12 @@
 <section id="product1"class="section-p1">
 <div class="pro-container">
 <div class="pro" onclick="window.location.href='sproduct.html';"> <!--when someone clicks on a product it will take them to product detailed description -->
-    <img src="img/products/f1.jpg" alt="">
+
+  <!-- product 1 -->
+    <img src="https://i.pinimg.com/564x/12/1b/eb/121bebcc59485b757a9a003e66c64f78.jpg" alt="">
     <div class="des">
 <span>adidas</span>
-<h5>Cartoon Astronaut T-shirt</h5>
+<h5>Multicolor Bomber Jacket</h5>
 <div class="star">
     <i class="fas fa-star"></i>
     <i class="fas fa-star"></i>
@@ -71,7 +76,7 @@
     <i class="fas fa-star"></i>
     <i class="fas fa-star"></i>
 </div>
-<h4>$78</h4>
+<h4> ₹777 </h4>
 </div>
 <a href="#"><i class="bi bi-cart cart"></i></a> 
 
@@ -85,10 +90,10 @@
 
 <!-- product 2 card -->
 <div class="pro">
-  <img src="img/products/f2.jpg" alt="">
+  <img src="https://i.pinimg.com/564x/b2/20/2d/b2202da19f2ef10b3f6eb701a7cabc81.jpg" alt="">
   <div class="des">
-<span>adidas</span>
-<h5>Cartoon Astronaut T-shirt</h5>
+<span>LV</span>
+<h5>Red Long Jacket</h5>
 <div class="star">
   <i class="fas fa-star"></i>
   <i class="fas fa-star"></i>
@@ -96,17 +101,17 @@
   <i class="fas fa-star"></i>
   <i class="fas fa-star"></i>
 </div>
-<h4>$78</h4>
+<h4>₹777</h4>
 </div>
 <a href="#"><i class="bi bi-cart cart"></i></a> 
 </div>
 
 <!-- product 3 card -->
 <div class="pro">
-  <img src="img/products/f3.jpg" alt="">
+  <img src="https://i.pinimg.com/564x/f4/dd/3f/f4dd3f0873f662b693f14423a9ef2543.jpg" alt="">
   <div class="des">
-<span>adidas</span>
-<h5>Cartoon Astronaut T-shirt</h5>
+<span>Levi's</span>
+<h5>Jacket</h5>
 <div class="star">
   <i class="fas fa-star"></i>
   <i class="fas fa-star"></i>
@@ -114,17 +119,17 @@
   <i class="fas fa-star"></i>
   <i class="fas fa-star"></i>
 </div>
-<h4>$78</h4>
+<h4>₹777</h4>
 </div>
 <a href="#"><i class="bi bi-cart cart"></i></a> 
 </div>
 
 <!-- product 4 card -->
 <div class="pro">
-  <img src="img/products/f4.jpg" alt="">
+  <img src="https://i.pinimg.com/564x/dc/40/25/dc402593bfd0f83b66d32707a3defbaf.jpg" alt="">
   <div class="des">
 <span>adidas</span>
-<h5>Cartoon Astronaut T-shirt</h5>
+<h5>Oversized Jacket</h5>
 <div class="star">
   <i class="fas fa-star"></i>
   <i class="fas fa-star"></i>
@@ -132,17 +137,17 @@
   <i class="fas fa-star"></i>
   <i class="fas fa-star"></i>
 </div>
-<h4>$78</h4>
+<h4>₹777</h4>
 </div>
 <a href="#"><i class="bi bi-cart cart"></i></a> 
 </div>
 
 <!-- product 5 card -->
 <div class="pro">
-  <img src="img/products/f5.jpg" alt="">
+  <img src="https://i.pinimg.com/originals/e5/9b/dd/e59bdd6bef6e62f122d989927c226465.jpg" alt="">
   <div class="des">
-<span>adidas</span>
-<h5>Cartoon Astronaut T-shirt</h5>
+<span>Joonbug</span>
+<h5>Half Jacket</h5>
 <div class="star">
   <i class="fas fa-star"></i>
   <i class="fas fa-star"></i>
@@ -150,17 +155,17 @@
   <i class="fas fa-star"></i>
   <i class="fas fa-star"></i>
 </div>
-<h4>$78</h4>
+<h4>₹777</h4>
 </div>
 <a href="#"><i class="bi bi-cart cart"></i></a> 
 </div>
 
 <!-- product 6 card -->
 <div class="pro">
-  <img src="img/products/f6.jpg" alt="">
+  <img src="https://i.pinimg.com/564x/b7/8b/99/b78b992d8fa3809af03b0c6e79e8d290.jpg" alt="">
   <div class="des">
-<span>adidas</span>
-<h5>Cartoon Astronaut T-shirt</h5>
+<span>Pastel</span>
+<h5>Bomber Jacket</h5>
 <div class="star">
   <i class="fas fa-star"></i>
   <i class="fas fa-star"></i>
@@ -168,17 +173,17 @@
   <i class="fas fa-star"></i>
   <i class="fas fa-star"></i>
 </div>
-<h4>$78</h4>
+<h4>₹777</h4>
 </div>
 <a href="#"><i class="bi bi-cart cart"></i></a> 
 </div>
 
 <!-- product 7 card -->
 <div class="pro">
-  <img src="img/products/f7.jpg" alt="">
+  <img src="https://i.pinimg.com/564x/30/12/42/30124241f74df14aacd8fb13b90351a3.jpg" alt="">
   <div class="des">
-<span>adidas</span>
-<h5>Cartoon Astronaut T-shirt</h5>
+<span>Pastel</span>
+<h5>Bomber Jacket</h5>
 <div class="star">
   <i class="fas fa-star"></i>
   <i class="fas fa-star"></i>
@@ -186,17 +191,17 @@
   <i class="fas fa-star"></i>
   <i class="fas fa-star"></i>
 </div>
-<h4>$78</h4>
+<h4>₹777</h4>
 </div>
 <a href="#"><i class="bi bi-cart cart"></i></a> 
 </div>
 
 <!-- product 8 card -->
 <div class="pro">
-  <img src="img/products/f8.jpg" alt="">
+  <img src="https://i.pinimg.com/originals/a6/f7/05/a6f70526fe9998d24d1a9b532a255f66.jpg" alt="">
   <div class="des">
-<span>adidas</span>
-<h5>Cartoon Astronaut T-shirt</h5>
+<span>ON</span>
+<h5>Rock Half Jacket</h5>
 <div class="star">
   <i class="fas fa-star"></i>
   <i class="fas fa-star"></i>
@@ -204,16 +209,17 @@
   <i class="fas fa-star"></i>
   <i class="fas fa-star"></i>
 </div>
-<h4>$78</h4>
+<h4>₹777</h4>
 </div>
 <a href="#"><i class="bi bi-cart cart"></i></a> 
 </div>
 
+  <!-- Product 9 card -->
   <div class="pro">
-      <img src="img/products/n1.jpg" alt="">
+      <img src="https://i.pinimg.com/564x/c5/fe/f9/c5fef9c0c06ed1f4b2848c35efa80d6b.jpg" alt="">
       <div class="des">
-  <span>adidas</span>
-  <h5>Cartoon Astronaut T-shirt</h5>
+  <span>Fila</span>
+  <h5>Jacket</h5>
   <div class="star">
       <i class="fas fa-star"></i>
       <i class="fas fa-star"></i>
@@ -221,17 +227,89 @@
       <i class="fas fa-star"></i>
       <i class="fas fa-star"></i>
   </div>
-  <h4>$78</h4>
+  <h4>₹777</h4>
   </div>
   <a href="#"><i class="bi bi-cart cart"></i></a>  
   </div>
   
-  <!-- product 2 card -->
+  <!-- product 10 card -->
   <div class="pro">
-    <img src="img/products/n2.jpg" alt="">
+    <img src="https://i.pinimg.com/originals/17/79/b2/1779b2aa668903fb5d24e61ca64eff83.jpg" alt="">
+    <div class="des">
+  <span>JITB</span>
+  <h5>Black Coat</h5>
+  <div class="star">
+    <i class="fas fa-star"></i>
+    <i class="fas fa-star"></i>
+    <i class="fas fa-star"></i>
+    <i class="fas fa-star"></i>
+    <i class="fas fa-star"></i>
+  </div>
+  <h4>₹777</h4>
+  </div>
+  <a href="#"><i class="bi bi-cart cart"></i></a> 
+  </div>
+  
+  <!-- product 11 card -->
+  <div class="pro">
+    <img src="https://i.pinimg.com/564x/53/83/24/538324456096ef2f44b66dc7c9d443aa.jpg" alt="">
+    <div class="des">
+  <span>JITB</span>
+  <h5>Black Coat</h5>
+  <div class="star">
+    <i class="fas fa-star"></i>
+    <i class="fas fa-star"></i>
+    <i class="fas fa-star"></i>
+    <i class="fas fa-star"></i>
+    <i class="fas fa-star"></i>
+  </div>
+  <h4>₹777</h4>
+  </div>
+  <a href="#"><i class="bi bi-cart cart"></i></a> 
+  </div>
+  
+  <!-- product 12 card -->
+  <div class="pro">
+    <img src="https://i.pinimg.com/originals/af/f5/aa/aff5aa3eb9b40d5288b88f35de06aa46.jpg" alt="">
     <div class="des">
   <span>adidas</span>
-  <h5>Cartoon Astronaut T-shirt</h5>
+  <h5>Stylish Jacket</h5>
+  <div class="star">
+    <i class="fas fa-star"></i>
+    <i class="fas fa-star"></i>
+    <i class="fas fa-star"></i>
+    <i class="fas fa-star"></i>
+    <i class="fas fa-star"></i>
+  </div>
+  <h4>₹777</h4>
+  </div>
+  <a href="#"><i class="bi bi-cart cart"></i></a> 
+  </div>
+  
+  <!-- product 13 card -->
+  <div class="pro">
+    <img src="https://i.pinimg.com/originals/ae/09/f7/ae09f7be4c2a107803e362e55fcff374.jpg" alt="">
+    <div class="des">
+  <span>Butter</span>
+  <h5>Butter Jacket</h5>
+  <div class="star">
+    <i class="fas fa-star"></i>
+    <i class="fas fa-star"></i>
+    <i class="fas fa-star"></i>
+    <i class="fas fa-star"></i>
+    <i class="fas fa-star"></i>
+  </div>
+  <h4>₹777</h4>
+  </div>
+  <a href="#"><i class="bi bi-cart cart"></i></a> 
+  </div>
+  
+  <!-- product 14 card -->
+  <div class="pro">
+    <img src="https://i.pinimg.com/originals/8c/c6/42/8cc642a327a5ad5a25109695ce0629b2.jpg" alt="">
+    <div class="des">
+  <span>LV</span>
+  <h5>LV Yellow Jacket</h5>
   <div class="star">
     <i class="fas fa-star"></i>
     <i class="fas fa-star"></i>
@@ -244,12 +322,12 @@
   <a href="#"><i class="bi bi-cart cart"></i></a> 
   </div>
   
-  <!-- product 3 card -->
+  <!-- product 15 card -->
   <div class="pro">
-    <img src="img/products/n3.jpg" alt="">
+    <img src="https://i.pinimg.com/originals/0e/85/d4/0e85d4ab0457297a618af3489b413d8e.jpg" alt="">
     <div class="des">
-  <span>adidas</span>
-  <h5>Cartoon Astronaut T-shirt</h5>
+  <span>LV</span>
+  <h5>LV Jacket</h5>
   <div class="star">
     <i class="fas fa-star"></i>
     <i class="fas fa-star"></i>
@@ -257,17 +335,17 @@
     <i class="fas fa-star"></i>
     <i class="fas fa-star"></i>
   </div>
-  <h4>$78</h4>
+  <h4>₹777</h4>
   </div>
   <a href="#"><i class="bi bi-cart cart"></i></a> 
   </div>
   
-  <!-- product 4 card -->
+  <!-- product 16 card -->
   <div class="pro">
-    <img src="img/products/n4.jpg" alt="">
+    <img src="https://i.pinimg.com/564x/aa/ad/30/aaad305b26fce2c5e3595e6f17ca134d.jpg" alt="">
     <div class="des">
   <span>adidas</span>
-  <h5>Cartoon Astronaut T-shirt</h5>
+  <h5>Jacket</h5>
   <div class="star">
     <i class="fas fa-star"></i>
     <i class="fas fa-star"></i>
@@ -275,79 +353,7 @@
     <i class="fas fa-star"></i>
     <i class="fas fa-star"></i>
   </div>
-  <h4>$78</h4>
-  </div>
-  <a href="#"><i class="bi bi-cart cart"></i></a> 
-  </div>
-  
-  <!-- product 5 card -->
-  <div class="pro">
-    <img src="img/products/n5.jpg" alt="">
-    <div class="des">
-  <span>adidas</span>
-  <h5>Cartoon Astronaut T-shirt</h5>
-  <div class="star">
-    <i class="fas fa-star"></i>
-    <i class="fas fa-star"></i>
-    <i class="fas fa-star"></i>
-    <i class="fas fa-star"></i>
-    <i class="fas fa-star"></i>
-  </div>
-  <h4>$78</h4>
-  </div>
-  <a href="#"><i class="bi bi-cart cart"></i></a> 
-  </div>
-  
-  <!-- product 6 card -->
-  <div class="pro">
-    <img src="img/products/n6.jpg" alt="">
-    <div class="des">
-  <span>adidas</span>
-  <h5>Cartoon Astronaut T-shirt</h5>
-  <div class="star">
-    <i class="fas fa-star"></i>
-    <i class="fas fa-star"></i>
-    <i class="fas fa-star"></i>
-    <i class="fas fa-star"></i>
-    <i class="fas fa-star"></i>
-  </div>
-  <h4>$78</h4>
-  </div>
-  <a href="#"><i class="bi bi-cart cart"></i></a> 
-  </div>
-  
-  <!-- product 7 card -->
-  <div class="pro">
-    <img src="img/products/n7.jpg" alt="">
-    <div class="des">
-  <span>adidas</span>
-  <h5>Cartoon Astronaut T-shirt</h5>
-  <div class="star">
-    <i class="fas fa-star"></i>
-    <i class="fas fa-star"></i>
-    <i class="fas fa-star"></i>
-    <i class="fas fa-star"></i>
-    <i class="fas fa-star"></i>
-  </div>
-  <h4>$78</h4>
-  </div>
-  <a href="#"><i class="bi bi-cart cart"></i></a> 
-  </div>
-  
-  <!-- product 8 card -->
-  <div class="pro">
-    <img src="img/products/n8.jpg" alt="">
-    <div class="des">
-  <span>adidas</span>
-  <h5>Cartoon Astronaut T-shirt</h5>
-  <div class="star">
-    <i class="fas fa-star"></i>
-    <i class="fas fa-star"></i>
-    <i class="fas fa-star"></i>
-    <i class="fas fa-star"></i>
-    <i class="fas fa-star"></i>
-  </div>
-  <h4>$78</h4>
+  <h4>₹777</h4>
   </div>
   <a href="#"><i class="bi bi-cart cart"></i></a> 
   </div>
@@ -428,14 +434,14 @@
   <h4>Install App</h4>
   <p>From App Store or Goolge Play Store</p>
   <div class="row">
-    <img src="img/pay/app.jpg" alt="">
-    <img src="img/pay/play.jpg" alt="">
+    <img src="static/img/pay/app.jpg" alt="">
+    <img src="static/img/pay/play.jpg" alt="">
   </div>
   <!-- payment section -->
-  <!-- <div class="pay"> -->
-  <p>Secured Payment Gateways</p>
-  <img src="img/pay/pay.png" alt="">
-<!-- </div> -->
+ <div class="pay">
+  <p class="payp">Secured Payment Gateways</p>
+  <img src="static/img/pay/pay.png" alt="">
+</div>
 </div>
 
 <!-- copyright section -->
